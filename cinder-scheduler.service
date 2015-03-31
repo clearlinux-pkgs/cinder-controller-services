@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenStack Cinder Scheduler Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=cinder
+ExecStart=/usr/bin/cinder-scheduler
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenStack Cinder API Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=cinder
+ExecStart=/usr/bin/cinder-api
+
+[Install]
+WantedBy=multi-user.target
