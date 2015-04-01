@@ -1,6 +1,6 @@
 Name     : cinder-controller-services
 Version  : 2015.1.0b3
-Release  : 1
+Release  : 2
 Source0  : cinder-api.service
 Source1  : cinder-scheduler.service
 Summary  : Cinder Controller Services
