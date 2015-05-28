@@ -3,9 +3,11 @@ Description=OpenStack Cinder Scheduler Server
 After=syslog.target network.target
 
 [Service]
-Type=simple
+Type=notify
+NotifyAccess=all
+Restart=always
 User=cinder
-ExecStart=/usr/bin/cinder-scheduler --config-file /usr/share/defaults/cinder/cinder-clr.conf --config-file /etc/cinder/cinder.conf
+ExecStart=/usr/bin/cinder-scheduler
 
 [Install]
 WantedBy=multi-user.target
